@@ -105,9 +105,8 @@ class Program
             Process.Start(
                 new ProcessStartInfo
                 {
-                    FileName = "cmd",
-                    Arguments = $"/C {commandWithUrl}",
-                    CreateNoWindow = true,
+                    FileName = command,
+                    Arguments = url,
                     UseShellExecute = true
                 }
             );
